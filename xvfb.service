@@ -1,0 +1,11 @@
+[Unit]
+Description=%p %i
+Before=pageboard@.service
+
+[Service]
+EnvironmentFile=-%h/.config/pageboard/xvfb
+ExecStart=/usr/bin/Xvfb $XVFB_OPTS
+Restart=always
+
+[Install]
+WantedBy=default.target
