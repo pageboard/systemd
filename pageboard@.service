@@ -9,6 +9,7 @@ Restart=always
 Environment=NODE_ENV=production
 Environment=VIPS_WARNING=0
 Environment=GIGACAGE_ENABLED=no
+Environment=OPENSSL_CONF=/usr/include/nodejs/openssl.cnf
 
 [Install]
 WantedBy=default.target
