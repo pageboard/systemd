@@ -1,0 +1,9 @@
+[Unit]
+Description=%p %i
+
+[Service]
+ExecStart=/usr/bin/lsyncd -log scarce %h/.config/pageboard/lsyncd
+Restart=always
+
+[Install]
+WantedBy=default.target
