@@ -18,6 +18,7 @@ After=pageboard.service network.target nss-lookup.target
 [Service]
 Type=forking
 Restart=always
+RestartSec=1
 WorkingDirectory=%h/pageboard/proxy
 PIDFile=%h/pageboard/proxy/nginx/nginx.pid
 ExecStartPre=/usr/sbin/nginx -t -q -p nginx -c nginx.conf -g 'daemon on; master_process on;'
