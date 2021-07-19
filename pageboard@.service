@@ -4,7 +4,7 @@ PartOf=%p.service
 After=postgresql.service
 
 [Service]
-ExecStart=%h/%p/server/%i/pageboard
+ExecStart=%h/%p/server/%i/bin/pageboard
 Restart=always
 RestartSec=5
 Environment=HOME=%h
